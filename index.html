@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>
+
+    </title>
+
+    <link href="panorama_viewer.css" rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <!--      <script src="jquery.panorama_viewer.min.js"></script>-->
+    <script src="jquery.panorama_viewer.js"></script>
+    <link rel="stylesheet" href="Main.css">
+
+
+</head>
+
+<body class="flex">
+    <nav>
+
+        <ul class="Menu">
+
+            <div class="Plugins">
+                <p>Plugins</p>
+            </div>
+            <div class="References">
+
+                <p>References</p>
+            </div>
+            <div class="Home">
+                <p>Home</p>
+            </div>
+        </ul>
+
+    </nav>
+    <div class="slide">
+        <div class="panorama">
+            <img src="images/gallery/thumb/glades.JPG"> ...
+            <script>
+                // Use $(window).load() on live site instead of document ready. This is for the purpose of running locally only
+                $(document).ready(function () {
+                    $(".panorama").panorama_viewer({
+                        repeat: true
+                    });
+                });
+            </script>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<!--
+     <script src="Jquery.js">
+    
+    </script>
+-->
+<script src="jquery.panorama_viewer.js"></script>
+<script src="jquery.panorama_viewer.min.js"></script>
+
+</html>
